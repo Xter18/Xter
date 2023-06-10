@@ -1,0 +1,11 @@
+const header = document.querySelector('.navbar');
+console.log(header)
+window.onscroll = function() {       //on监听窗口
+    const top = window.scrollY;//储存在top
+    if(top >=100) {
+        header.classList.add('navbarDark');//添加c
+    }
+    else {
+        header.classList.remove('navbarDark');//移除c
+    }
+}
